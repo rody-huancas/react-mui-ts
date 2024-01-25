@@ -1,10 +1,19 @@
 import React from "react";
 import { Button, Container } from "@mui/material";
+import { HeaderComponent } from "../../components";
 
 export const HomePage: React.FC<{}> = () => {
   return (
-    <Container sx={{ mt: 9 }} maxWidth="xl">
-      <Button variant="contained">Hola mundo</Button>
+    <Container maxWidth="xl">
+      <HeaderComponent
+        title="Hola mundo"
+        description="Lorem ipsum dolor sit."
+        element={
+          <Button variant="contained" fullWidth>
+            Ingresar
+          </Button>
+        }
+      />
     </Container>
   );
 };
